@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */; };
+		2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */; };
+		2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */; };
+		22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF6233772FA0069B46B /* RaceTrackModel.swift */; };
+		22302DF923377C2F0069B46B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF823377C2F0069B46B /* RequestManager.swift */; };
+		22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */; };
 		229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D2054233531CE005DBA8C /* AppDelegate.swift */; };
-		229D2057233531CE005DBA8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D2056233531CE005DBA8C /* ViewController.swift */; };
 		229D205A233531CE005DBA8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229D2058233531CE005DBA8C /* Main.storyboard */; };
 		229D205C233531D0005DBA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229D205B233531D0005DBA8C /* Assets.xcassets */; };
 		229D205F233531D0005DBA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229D205D233531D0005DBA8C /* LaunchScreen.storyboard */; };
+		22A2FB482338E1D100132741 /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A2FB472338E1D100132741 /* DriverModel.swift */; };
+		22DEBFB2233B6D3800E5C643 /* DetailTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */; };
+		22DEBFB4233B703900E5C643 /* ConstructorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB3233B703900E5C643 /* ConstructorModel.swift */; };
+		22DEBFB6233B90F000E5C643 /* TrackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB5233B90F000E5C643 /* TrackImage.swift */; };
+		22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2B23387D7D00F2AABD /* DriverStandings.swift */; };
+		22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */; };
+		6627D4DC0025C5305AEEB137 /* Pods_Formula_One.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceInfoViewController.swift; sourceTree = "<group>"; };
+		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewController.swift; sourceTree = "<group>"; };
+		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
+		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackModel.swift; sourceTree = "<group>"; };
+		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewCell.swift; sourceTree = "<group>"; };
 		229D2051233531CE005DBA8C /* Formula One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Formula One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229D2054233531CE005DBA8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		229D2056233531CE005DBA8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		229D2059233531CE005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229D205B233531D0005DBA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229D205E233531D0005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229D2060233531D0005DBA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTrackViewController.swift; path = "/Users/macos/Desktop/Formula One/DetailTrackViewController.swift"; sourceTree = "<absolute>"; };
+		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorModel.swift; path = "/Users/macos/Desktop/Formula One/ConstructorModel.swift"; sourceTree = "<absolute>"; };
+		22DEBFB5233B90F000E5C643 /* TrackImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackImage.swift; path = "/Users/macos/Desktop/Formula One/TrackImage.swift"; sourceTree = "<absolute>"; };
+		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
+		22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
+		3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.release.xcconfig"; sourceTree = "<group>"; };
+		40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formula_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDE04A0B0214DD8EA465C29 /* Pods-Formula One.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6627D4DC0025C5305AEEB137 /* Pods_Formula_One.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221989442337FB7C00EAFDD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
+				22302DF823377C2F0069B46B /* RequestManager.swift */,
+				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
+				22A2FB472338E1D100132741 /* DriverModel.swift */,
+				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
+				22DEBFB5233B90F000E5C643 /* TrackImage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		221989452337FBA600EAFDD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
+				22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		221989472337FBE200EAFDD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
+				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
+				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
+				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		229D2048233531CE005DBA8C = {
 			isa = PBXGroup;
 			children = (
+				221989442337FB7C00EAFDD4 /* Model */,
+				221989452337FBA600EAFDD4 /* View */,
+				221989472337FBE200EAFDD4 /* Controller */,
 				229D2053233531CE005DBA8C /* Formula One */,
 				229D2052233531CE005DBA8C /* Products */,
+				91C1505859CA7AFE928BAF39 /* Pods */,
+				6409B02DFE53000D689DC573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +120,29 @@
 			isa = PBXGroup;
 			children = (
 				229D2054233531CE005DBA8C /* AppDelegate.swift */,
-				229D2056233531CE005DBA8C /* ViewController.swift */,
 				229D2058233531CE005DBA8C /* Main.storyboard */,
 				229D205B233531D0005DBA8C /* Assets.xcassets */,
 				229D205D233531D0005DBA8C /* LaunchScreen.storyboard */,
 				229D2060233531D0005DBA8C /* Info.plist */,
 			);
 			path = "Formula One";
+			sourceTree = "<group>";
+		};
+		6409B02DFE53000D689DC573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91C1505859CA7AFE928BAF39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EDE04A0B0214DD8EA465C29 /* Pods-Formula One.debug.xcconfig */,
+				3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 229D2063233531D0005DBA8C /* Build configuration list for PBXNativeTarget "Formula One" */;
 			buildPhases = (
+				A82DB4186ED55DB7CF3FC75C /* [CP] Check Pods Manifest.lock */,
 				229D204D233531CE005DBA8C /* Sources */,
 				229D204E233531CE005DBA8C /* Frameworks */,
 				229D204F233531CE005DBA8C /* Resources */,
+				BB7D5AAF3787DFDB5DCF8587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +213,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A82DB4186ED55DB7CF3FC75C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Formula One-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7D5AAF3787DFDB5DCF8587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Formula One/Pods-Formula One-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Formula One/Pods-Formula One-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		229D204D233531CE005DBA8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229D2057233531CE005DBA8C /* ViewController.swift in Sources */,
 				229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */,
+				22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */,
+				22DEBFB4233B703900E5C643 /* ConstructorModel.swift in Sources */,
+				22DEBFB2233B6D3800E5C643 /* DetailTrackViewController.swift in Sources */,
+				22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */,
+				2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */,
+				22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */,
+				22302DF923377C2F0069B46B /* RequestManager.swift in Sources */,
+				2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */,
+				2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */,
+				22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */,
+				22A2FB482338E1D100132741 /* DriverModel.swift in Sources */,
+				22DEBFB6233B90F000E5C643 /* TrackImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +421,7 @@
 		};
 		229D2064233531D0005DBA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EDE04A0B0214DD8EA465C29 /* Pods-Formula One.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +440,7 @@
 		};
 		229D2065233531D0005DBA8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
