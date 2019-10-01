@@ -18,7 +18,7 @@ class DriverTableViewCell: UITableViewCell {
   func load(with drivers:DriverStandings) {
     driverNameTextLabel.text = drivers.driver.givenName + " " + drivers.driver.familyName
     positionDriverTextLabel.text = String(drivers.position)
-    teamDriverTextLabel.text = drivers.constructors.name
+    teamDriverTextLabel.text = drivers.constructors.first?.name
 
 //    view.layer.cornerRadius = 15
 //    view.layer.borderWidth = 2

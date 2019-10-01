@@ -34,10 +34,10 @@ class RequestManager {
           //преобразуем data в [JSON]
           let json = try JSON(data: data)
           //получаем необходимый массив [JSON]
-          let races = json["MRData"]["RaceTable"]["Races"].arrayValue
+          let racesJson = json["MRData"]["RaceTable"]["Races"].arrayValue
           //создание модели на основе массива [JSON]
           var racesModelArray: [RaceTrackModel] = []
-          for raceJson in races {
+          for raceJson in racesJson {
             //получаем преобразованную модель
             let raceModel = RaceTrackModel(with: raceJson)
             //добавляем в модель в массив и получаем массив моделей
