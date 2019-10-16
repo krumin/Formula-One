@@ -12,6 +12,9 @@ import UIKit
 
 class RaceTrackTableViewController: UITableViewController {
 
+  let viewControllerSegue = "trackImageSegue"
+  var race: RaceTrackModel?
+  
   private var track = [RaceTrackModel]() {
     didSet {
       DispatchQueue.main.async {
@@ -60,17 +63,13 @@ class RaceTrackTableViewController: UITableViewController {
 
   }
   
-
-  
-  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == viewControllerSegue {
+      if let indexPath = tableView.indexPathForSelectedRow {
+        let destinationVC = segue.destination as! DetailTrackViewController
+        destinationVC.race = self.track[indexPath.row]
+      }
     }
-    */
+  }
 
 }

@@ -7,12 +7,19 @@
 
 import UIKit
 
-class DetailTrackViewController: UIViewController {
+class DetailTrackViewController: UITableViewController {
 
+  @IBOutlet weak var trackImageView: UIImageView!
+  
+  var race: RaceTrackModel?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
-    }
   
+      if let race = race?.circuit {
+        trackImageView.image = race.image
+        
+      }
+  }
 }

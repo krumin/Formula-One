@@ -12,16 +12,17 @@ class DriverTableViewCell: UITableViewCell {
 
   @IBOutlet weak var driverNameTextLabel: UILabel!
   @IBOutlet weak var positionDriverTextLabel: UILabel!
-  @IBOutlet weak var teamDriverTextLabel: UILabel!
   @IBOutlet weak var pointsDriverTextLabel: UILabel!
+  @IBOutlet weak var nationalityDriverImageView: UIImageView!
   
-  func load(with drivers:DriverStandings) {
-    driverNameTextLabel.text = drivers.driver.givenName + " " + drivers.driver.familyName
-    positionDriverTextLabel.text = String(drivers.position)
-    teamDriverTextLabel.text = drivers.constructors.first?.name
+  func load(with standing: DriverStandings) {
+    let driver = standing.driver
+    
+    driverNameTextLabel.text = driver.fullName
+    positionDriverTextLabel.text = String(standing.position)
+    pointsDriverTextLabel.text = String(standing.points)
+    nationalityDriverImageView.image = driver.nationalityDriver.flag
 
-//    view.layer.cornerRadius = 15
-//    view.layer.borderWidth = 2
   }
 
 }

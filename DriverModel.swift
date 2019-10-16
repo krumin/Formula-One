@@ -14,18 +14,24 @@ struct DriverModel {
   let permanentNumber: Int
   let code: String
   let url: String
+  var fullName: String {
+    return givenName + " " + familyName
+  }
   let givenName: String
   let familyName: String
-  let nationality: String
+  let dateOfBirth: String
+  let nationalityDriver: Country
   
   init(with json: JSON) {
-    
     driverId = json["driverId"].stringValue
     permanentNumber = json["permanentNumber"].intValue
     code = json["code"].stringValue
     url = json["url"].stringValue
     givenName = json["givenName"].stringValue
     familyName = json["familyName"].stringValue
-    nationality = json["nationality"].stringValue
+    dateOfBirth = json["dateOfBirth"].stringValue
+    
+    let nationalityString = json["nationality"].stringValue
+    nationalityDriver = Country(rawValue: nationalityString) ?? .unknown
   }
 }

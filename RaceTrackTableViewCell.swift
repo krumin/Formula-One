@@ -16,12 +16,15 @@ class RaceTrackTableViewCell: UITableViewCell {
   
   @IBOutlet weak var raceNumberTextLabel: UILabel!
   
+  @IBOutlet weak var countryImage: UIImageView!
   
   func load(with tracks:RaceTrackModel) {
-    raceNameTextLabel.text = tracks.country
+    raceNameTextLabel.text = tracks.raceName
     raceNumberTextLabel.text = String(tracks.round)
     view.layer.cornerRadius = 15
     view.layer.borderWidth = 2
+    countryImage.image = tracks.country.flag
+    
   }
   
 }

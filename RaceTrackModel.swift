@@ -12,7 +12,8 @@ import SwiftyJSON
 struct RaceTrackModel {
   let round: Int
   let raceName: String
-  let country: String
+  var circuit: Circuit
+  let country: Country
   //let date: Date
   //let time: Date
   let url: String
@@ -20,7 +21,10 @@ struct RaceTrackModel {
   init(with json: JSON) {
     round = json["round"].intValue
     raceName = json["raceName"].stringValue
-    country = json["Circuit"]["Location"]["country"].stringValue
+    let circuitString = json["Circuit"]["circuitName"].stringValue
+    circuit = Circuit(rawValue: circuitString) ?? .unknow
+    let countryString = json["Circuit"]["Location"]["country"].stringValue
+    country = Country(rawValue: countryString) ?? .unknown
     //date = json["date"]
     //time = json["time"].intValue
     url = json["url"].stringValue

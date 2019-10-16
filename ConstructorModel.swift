@@ -12,14 +12,13 @@ struct ConstructorModel {
   let constructorId: String
   let url: String
   let name: String
-  let nationality: String
+  let nationalityConstructor: Country
   
   init(with json: JSON) {
     constructorId = json["constructorId"].stringValue
     url = json["url"].stringValue
     name = json["name"].stringValue
-    nationality = json["nationality"].stringValue
-  
+    let nationalityString = json["nationality"].stringValue
+    nationalityConstructor = Country(rawValue: nationalityString) ?? .unknown
   }
-  
 }

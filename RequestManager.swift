@@ -94,6 +94,52 @@ class RequestManager {
       }.resume()
   }
   
+  func loadRequestConstructor(success: @escaping ([ConstructorStandings]) -> (), onError: @escaping (MyError) -> ()) {
+    guard let myURL = URL(string: "https://ergast.com/api/f1/2019/constructorStandings.json") else {
+      onError(.badUrl)
+      return
+    }
+    let session = URLSession.shared
+    
+    session.dataTask(with: myURL) { (data, response, error) in
+      if let data = data {
+        
+        do {
+          //преобразуем data в [JSON]
+          let json = try JSON(data: data)
+          //получаем необходимый массив [JSON]
+          let constructors = json["MRData"]["StandingsTable"]["StandingsLists"].arrayValue.first!["ConstructorStandings"].arrayValue
+          //создание модели на основе массива [JSON]
+
+//          let constructorsModelArray = constructors.map { ConstructorStandings(with: $0) }
+          
+//          или
+          
+//          let constructorsModelArray = constructors.map { constructor in
+//            return ConstructorStandings(with: constructor)
+//          }
+          
+          var constructorsModelArray: [ConstructorStandings] = []
+          for constructorJson in constructors {
+            //получаем преобразованную модель
+            let constructorModel = ConstructorStandings(with: constructorJson)
+            //добавляем в модель в массив и получаем массив моделей
+            constructorsModelArray.append(constructorModel)
+          }
+          success(constructorsModelArray)
+        } catch let error {
+          onError(.badData(error))
+        }
+      } else {
+        if let error = error {
+          onError(.noData(error))
+        } else {
+          onError(.undefined)
+        }
+      }
+      }.resume()
+  }
+  
 }
 
 

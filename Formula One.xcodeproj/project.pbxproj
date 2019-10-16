@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2200DA3F235647B700626EE7 /* DriverTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */; };
+		2200DA412356520D00626EE7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA402356520D00626EE7 /* DetailTableViewCell.swift */; };
+		2200DA432356695F00626EE7 /* DriverDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */; };
 		2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */; };
 		2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */; };
 		2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */; };
+		221D56B22356F24C00E0ADB8 /* DriverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D56B12356F24C00E0ADB8 /* DriverManager.swift */; };
 		22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF6233772FA0069B46B /* RaceTrackModel.swift */; };
 		22302DF923377C2F0069B46B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF823377C2F0069B46B /* RequestManager.swift */; };
 		22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */; };
@@ -18,18 +22,26 @@
 		229D205C233531D0005DBA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229D205B233531D0005DBA8C /* Assets.xcassets */; };
 		229D205F233531D0005DBA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229D205D233531D0005DBA8C /* LaunchScreen.storyboard */; };
 		22A2FB482338E1D100132741 /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A2FB472338E1D100132741 /* DriverModel.swift */; };
+		22CFCF96234E767900CC4844 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CFCF95234E767900CC4844 /* Circuit.swift */; };
+		22D57DC1234CDDCA00567D13 /* ConstructorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */; };
+		22D57DC3234CE28300567D13 /* ConstructorStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D57DC2234CE28300567D13 /* ConstructorStandings.swift */; };
+		22D57DC5234CE60100567D13 /* ConstructorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */; };
 		22DEBFB2233B6D3800E5C643 /* DetailTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */; };
 		22DEBFB4233B703900E5C643 /* ConstructorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB3233B703900E5C643 /* ConstructorModel.swift */; };
-		22DEBFB6233B90F000E5C643 /* TrackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB5233B90F000E5C643 /* TrackImage.swift */; };
+		22DEBFB6233B90F000E5C643 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB5233B90F000E5C643 /* Country.swift */; };
 		22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2B23387D7D00F2AABD /* DriverStandings.swift */; };
 		22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */; };
 		6627D4DC0025C5305AEEB137 /* Pods_Formula_One.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell2.swift; sourceTree = "<group>"; };
+		2200DA402356520D00626EE7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailTableViewController.swift; sourceTree = "<group>"; };
 		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceInfoViewController.swift; sourceTree = "<group>"; };
 		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewController.swift; sourceTree = "<group>"; };
 		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
+		221D56B12356F24C00E0ADB8 /* DriverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverManager.swift; sourceTree = "<group>"; };
 		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackModel.swift; sourceTree = "<group>"; };
 		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewCell.swift; sourceTree = "<group>"; };
@@ -40,9 +52,13 @@
 		229D205E233531D0005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229D2060233531D0005DBA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		22CFCF95234E767900CC4844 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/ConstructorTableViewCell.swift"; sourceTree = "<absolute>"; };
+		22D57DC2234CE28300567D13 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorStandings.swift; path = "/Users/macos/Desktop/Formula One/ConstructorStandings.swift"; sourceTree = "<absolute>"; };
+		22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewController.swift; path = "/Users/macos/Desktop/Formula One/ConstructorTableViewController.swift"; sourceTree = "<absolute>"; };
 		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTrackViewController.swift; path = "/Users/macos/Desktop/Formula One/DetailTrackViewController.swift"; sourceTree = "<absolute>"; };
 		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorModel.swift; path = "/Users/macos/Desktop/Formula One/ConstructorModel.swift"; sourceTree = "<absolute>"; };
-		22DEBFB5233B90F000E5C643 /* TrackImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackImage.swift; path = "/Users/macos/Desktop/Formula One/TrackImage.swift"; sourceTree = "<absolute>"; };
+		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Country.swift; path = "/Users/macos/Desktop/Formula One/Country.swift"; sourceTree = "<absolute>"; };
 		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
 		22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 		3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,9 +84,12 @@
 				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
 				22302DF823377C2F0069B46B /* RequestManager.swift */,
 				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
+				22D57DC2234CE28300567D13 /* ConstructorStandings.swift */,
 				22A2FB472338E1D100132741 /* DriverModel.swift */,
 				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
-				22DEBFB5233B90F000E5C643 /* TrackImage.swift */,
+				22DEBFB5233B90F000E5C643 /* Country.swift */,
+				22CFCF95234E767900CC4844 /* Circuit.swift */,
+				221D56B12356F24C00E0ADB8 /* DriverManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -80,6 +99,9 @@
 			children = (
 				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
 				22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */,
+				2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */,
+				22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */,
+				2200DA402356520D00626EE7 /* DetailTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -90,7 +112,9 @@
 				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
 				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
 				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
+				22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */,
 				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
+				2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -265,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D57DC3234CE28300567D13 /* ConstructorStandings.swift in Sources */,
 				229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */,
 				22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */,
 				22DEBFB4233B703900E5C643 /* ConstructorModel.swift in Sources */,
@@ -272,12 +297,19 @@
 				22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */,
 				2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */,
 				22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */,
+				2200DA3F235647B700626EE7 /* DriverTableViewCell2.swift in Sources */,
 				22302DF923377C2F0069B46B /* RequestManager.swift in Sources */,
 				2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */,
 				2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */,
+				22D57DC1234CDDCA00567D13 /* ConstructorTableViewCell.swift in Sources */,
+				22D57DC5234CE60100567D13 /* ConstructorTableViewController.swift in Sources */,
+				2200DA432356695F00626EE7 /* DriverDetailTableViewController.swift in Sources */,
 				22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */,
 				22A2FB482338E1D100132741 /* DriverModel.swift in Sources */,
-				22DEBFB6233B90F000E5C643 /* TrackImage.swift in Sources */,
+				22DEBFB6233B90F000E5C643 /* Country.swift in Sources */,
+				221D56B22356F24C00E0ADB8 /* DriverManager.swift in Sources */,
+				22CFCF96234E767900CC4844 /* Circuit.swift in Sources */,
+				2200DA412356520D00626EE7 /* DetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
