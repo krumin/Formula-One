@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Lando Norris.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Lando Norris.jpg",
       "scale" : "2x"
     },
     {

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Nico Hulkenberg.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Nico Hulkenberg.jpg",
       "scale" : "2x"
     },
     {

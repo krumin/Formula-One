@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Charles Leclerc.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Charles Leclerc.jpg",
       "scale" : "2x"
     },
     {

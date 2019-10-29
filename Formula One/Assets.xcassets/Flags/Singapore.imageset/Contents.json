@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Singapore.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Singapore.png",
       "scale" : "2x"
     },
     {

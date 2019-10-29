@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2200DA3F235647B700626EE7 /* DriverTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */; };
-		2200DA412356520D00626EE7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA402356520D00626EE7 /* DetailTableViewCell.swift */; };
-		2200DA432356695F00626EE7 /* DriverDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */; };
 		2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */; };
 		2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */; };
 		2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */; };
+		2219810B2358B7B4003D838D /* TrackMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219810A2358B7B4003D838D /* TrackMainTableViewCell.swift */; };
+		2219810D2358B7E5003D838D /* TrackInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219810C2358B7E5003D838D /* TrackInfoTableViewCell.swift */; };
 		221D56B22356F24C00E0ADB8 /* DriverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D56B12356F24C00E0ADB8 /* DriverManager.swift */; };
 		22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF6233772FA0069B46B /* RaceTrackModel.swift */; };
 		22302DF923377C2F0069B46B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DF823377C2F0069B46B /* RequestManager.swift */; };
 		22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */; };
+		22355DCE235B7CB100E967F2 /* RaceResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */; };
+		22355DD0235B7D1400E967F2 /* QualifyingResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */; };
+		223E4B09235E3CED0007AC47 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E4B08235E3CED0007AC47 /* Car.swift */; };
+		226261FE2364701D0083C6BE /* RequestManager+RaceTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226261FD2364701D0083C6BE /* RequestManager+RaceTrack.swift */; };
+		2298299623578FE700A2DCD3 /* DriverInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */; };
+		22982998235796F100A2DCD3 /* DriverMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */; };
+		2298299A2357971300A2DCD3 /* DriverInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */; };
 		229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D2054233531CE005DBA8C /* AppDelegate.swift */; };
 		229D205A233531CE005DBA8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229D2058233531CE005DBA8C /* Main.storyboard */; };
 		229D205C233531D0005DBA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229D205B233531D0005DBA8C /* Assets.xcassets */; };
 		229D205F233531D0005DBA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229D205D233531D0005DBA8C /* LaunchScreen.storyboard */; };
 		22A2FB482338E1D100132741 /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A2FB472338E1D100132741 /* DriverModel.swift */; };
+		22B140C1235F9E5A00B9AE4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B140C0235F9E5A00B9AE4F /* MapViewController.swift */; };
+		22B140C3235F9F1F00B9AE4F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B140C2235F9F1F00B9AE4F /* MapKit.framework */; };
 		22CFCF96234E767900CC4844 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CFCF95234E767900CC4844 /* Circuit.swift */; };
 		22D57DC1234CDDCA00567D13 /* ConstructorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */; };
 		22D57DC3234CE28300567D13 /* ConstructorStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D57DC2234CE28300567D13 /* ConstructorStandings.swift */; };
@@ -35,31 +43,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell2.swift; sourceTree = "<group>"; };
-		2200DA402356520D00626EE7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailTableViewController.swift; sourceTree = "<group>"; };
-		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceInfoViewController.swift; sourceTree = "<group>"; };
-		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewController.swift; sourceTree = "<group>"; };
-		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
-		221D56B12356F24C00E0ADB8 /* DriverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverManager.swift; sourceTree = "<group>"; };
-		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackModel.swift; sourceTree = "<group>"; };
-		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceInfoViewController.swift; path = "Formula One/Sources/RaceInfoViewController.swift"; sourceTree = "<group>"; };
+		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceTrackTableViewController.swift; path = "Formula One/Sources/RaceTrackTableViewController.swift"; sourceTree = "<group>"; };
+		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverTableViewController.swift; path = "Formula One/Sources/DriverTableViewController.swift"; sourceTree = "<group>"; };
+		2219810A2358B7B4003D838D /* TrackMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMainTableViewCell.swift; sourceTree = "<group>"; };
+		2219810C2358B7E5003D838D /* TrackInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackInfoTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/TrackInfoTableViewCell.swift"; sourceTree = "<absolute>"; };
+		221D56B12356F24C00E0ADB8 /* DriverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverManager.swift; path = "Formula One/Sources/DriverManager.swift"; sourceTree = "<group>"; };
+		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceTrackModel.swift; path = "Formula One/Sources/RaceTrackModel.swift"; sourceTree = "<group>"; };
+		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = "Formula One/Sources/RequestManager.swift"; sourceTree = "<group>"; };
 		22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewCell.swift; sourceTree = "<group>"; };
+		22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceResultsModel.swift; path = "Formula One/Sources/RaceResultsModel.swift"; sourceTree = "<group>"; };
+		22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QualifyingResultsModel.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/QualifyingResultsModel.swift"; sourceTree = "<absolute>"; };
+		223E4B08235E3CED0007AC47 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Car.swift; path = "Formula One/Sources/Car.swift"; sourceTree = "<group>"; };
+		226261FD2364701D0083C6BE /* RequestManager+RaceTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RequestManager+RaceTrack.swift"; path = "Formula One/Sources/RequestManager+RaceTrack.swift"; sourceTree = "<group>"; };
+		2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverInfoTableViewController.swift; path = "Formula One/Sources/DriverInfoTableViewController.swift"; sourceTree = "<group>"; };
+		22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMainTableViewCell.swift; sourceTree = "<group>"; };
+		229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverInfoTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/DriverInfoTableViewCell.swift"; sourceTree = "<absolute>"; };
 		229D2051233531CE005DBA8C /* Formula One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Formula One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229D2054233531CE005DBA8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229D2059233531CE005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229D205B233531D0005DBA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229D205E233531D0005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229D2060233531D0005DBA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
-		22CFCF95234E767900CC4844 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
-		22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/ConstructorTableViewCell.swift"; sourceTree = "<absolute>"; };
-		22D57DC2234CE28300567D13 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorStandings.swift; path = "/Users/macos/Desktop/Formula One/ConstructorStandings.swift"; sourceTree = "<absolute>"; };
-		22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewController.swift; path = "/Users/macos/Desktop/Formula One/ConstructorTableViewController.swift"; sourceTree = "<absolute>"; };
-		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTrackViewController.swift; path = "/Users/macos/Desktop/Formula One/DetailTrackViewController.swift"; sourceTree = "<absolute>"; };
-		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorModel.swift; path = "/Users/macos/Desktop/Formula One/ConstructorModel.swift"; sourceTree = "<absolute>"; };
-		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Country.swift; path = "/Users/macos/Desktop/Formula One/Country.swift"; sourceTree = "<absolute>"; };
-		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
+		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverModel.swift; path = "Formula One/Sources/DriverModel.swift"; sourceTree = "<group>"; };
+		22B140C0235F9E5A00B9AE4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "Formula One/Sources/MapViewController.swift"; sourceTree = "<group>"; };
+		22B140C2235F9F1F00B9AE4F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		22CFCF95234E767900CC4844 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Circuit.swift; path = "Formula One/Sources/Circuit.swift"; sourceTree = "<group>"; };
+		22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorTableViewCell.swift"; sourceTree = "<absolute>"; };
+		22D57DC2234CE28300567D13 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorStandings.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorStandings.swift"; sourceTree = "<absolute>"; };
+		22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewController.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorTableViewController.swift"; sourceTree = "<absolute>"; };
+		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTrackViewController.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/DetailTrackViewController.swift"; sourceTree = "<absolute>"; };
+		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorModel.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorModel.swift"; sourceTree = "<absolute>"; };
+		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Country.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/Country.swift"; sourceTree = "<absolute>"; };
+		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverStandings.swift; path = "Formula One/Sources/DriverStandings.swift"; sourceTree = "<group>"; };
 		22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 		3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.release.xcconfig"; sourceTree = "<group>"; };
 		40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formula_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B140C3235F9F1F00B9AE4F /* MapKit.framework in Frameworks */,
 				6627D4DC0025C5305AEEB137 /* Pods_Formula_One.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,15 +98,10 @@
 		221989442337FB7C00EAFDD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
-				22302DF823377C2F0069B46B /* RequestManager.swift */,
-				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
-				22D57DC2234CE28300567D13 /* ConstructorStandings.swift */,
-				22A2FB472338E1D100132741 /* DriverModel.swift */,
-				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
-				22DEBFB5233B90F000E5C643 /* Country.swift */,
-				22CFCF95234E767900CC4844 /* Circuit.swift */,
-				221D56B12356F24C00E0ADB8 /* DriverManager.swift */,
+				223811382367797F0004CF12 /* Race */,
+				223811362367792B0004CF12 /* Driver */,
+				223811372367793B0004CF12 /* Constructor */,
+				22381139236779A20004CF12 /* RequestManager */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -97,11 +109,9 @@
 		221989452337FBA600EAFDD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
-				22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */,
-				2200DA3E235647B700626EE7 /* DriverTableViewCell2.swift */,
-				22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */,
-				2200DA402356520D00626EE7 /* DetailTableViewCell.swift */,
+				223811302367770D0004CF12 /* TrackView */,
+				22381131236777460004CF12 /* DriverView */,
+				22381132236777A00004CF12 /* ConstructorView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,14 +119,111 @@
 		221989472337FBE200EAFDD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
-				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
-				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
-				22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */,
-				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
-				2200DA422356695F00626EE7 /* DriverDetailTableViewController.swift */,
+				22381133236777DF0004CF12 /* RaceController */,
+				223811342367782F0004CF12 /* DriverController */,
+				22381135236778A80004CF12 /* ConstructorController */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		223811302367770D0004CF12 /* TrackView */ = {
+			isa = PBXGroup;
+			children = (
+				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
+				2219810A2358B7B4003D838D /* TrackMainTableViewCell.swift */,
+				2219810C2358B7E5003D838D /* TrackInfoTableViewCell.swift */,
+			);
+			name = TrackView;
+			path = "Formula One/Sources/TrackView";
+			sourceTree = "<group>";
+		};
+		22381131236777460004CF12 /* DriverView */ = {
+			isa = PBXGroup;
+			children = (
+				22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */,
+				22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */,
+				229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */,
+			);
+			name = DriverView;
+			path = "Formula One/Sources/DriverView";
+			sourceTree = "<group>";
+		};
+		22381132236777A00004CF12 /* ConstructorView */ = {
+			isa = PBXGroup;
+			children = (
+				22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */,
+			);
+			name = ConstructorView;
+			path = "Formula One/Sources/ConstructorView";
+			sourceTree = "<group>";
+		};
+		22381133236777DF0004CF12 /* RaceController */ = {
+			isa = PBXGroup;
+			children = (
+				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
+				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
+				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
+				22B140C0235F9E5A00B9AE4F /* MapViewController.swift */,
+			);
+			name = RaceController;
+			sourceTree = "<group>";
+		};
+		223811342367782F0004CF12 /* DriverController */ = {
+			isa = PBXGroup;
+			children = (
+				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
+				2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */,
+			);
+			name = DriverController;
+			sourceTree = "<group>";
+		};
+		22381135236778A80004CF12 /* ConstructorController */ = {
+			isa = PBXGroup;
+			children = (
+				22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */,
+			);
+			name = ConstructorController;
+			sourceTree = "<group>";
+		};
+		223811362367792B0004CF12 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				22A2FB472338E1D100132741 /* DriverModel.swift */,
+				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
+				221D56B12356F24C00E0ADB8 /* DriverManager.swift */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
+		223811372367793B0004CF12 /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
+				22D57DC2234CE28300567D13 /* ConstructorStandings.swift */,
+				223E4B08235E3CED0007AC47 /* Car.swift */,
+			);
+			name = Constructor;
+			sourceTree = "<group>";
+		};
+		223811382367797F0004CF12 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
+				22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */,
+				22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */,
+				22DEBFB5233B90F000E5C643 /* Country.swift */,
+				22CFCF95234E767900CC4844 /* Circuit.swift */,
+			);
+			name = Race;
+			sourceTree = "<group>";
+		};
+		22381139236779A20004CF12 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				22302DF823377C2F0069B46B /* RequestManager.swift */,
+				226261FD2364701D0083C6BE /* RequestManager+RaceTrack.swift */,
+			);
+			name = RequestManager;
 			sourceTree = "<group>";
 		};
 		229D2048233531CE005DBA8C = {
@@ -155,6 +262,7 @@
 		6409B02DFE53000D689DC573 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22B140C2235F9F1F00B9AE4F /* MapKit.framework */,
 				40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */,
 			);
 			name = Frameworks;
@@ -203,6 +311,11 @@
 				TargetAttributes = {
 					229D2050233531CE005DBA8C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -292,24 +405,31 @@
 				22D57DC3234CE28300567D13 /* ConstructorStandings.swift in Sources */,
 				229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */,
 				22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */,
+				223E4B09235E3CED0007AC47 /* Car.swift in Sources */,
 				22DEBFB4233B703900E5C643 /* ConstructorModel.swift in Sources */,
 				22DEBFB2233B6D3800E5C643 /* DetailTrackViewController.swift in Sources */,
+				22355DD0235B7D1400E967F2 /* QualifyingResultsModel.swift in Sources */,
+				2219810D2358B7E5003D838D /* TrackInfoTableViewCell.swift in Sources */,
+				2298299623578FE700A2DCD3 /* DriverInfoTableViewController.swift in Sources */,
 				22302DFB23377EA30069B46B /* RaceTrackTableViewCell.swift in Sources */,
 				2207A9B023368CBE004BC4A3 /* RaceInfoViewController.swift in Sources */,
+				22355DCE235B7CB100E967F2 /* RaceResultsModel.swift in Sources */,
+				226261FE2364701D0083C6BE /* RequestManager+RaceTrack.swift in Sources */,
 				22302DF7233772FA0069B46B /* RaceTrackModel.swift in Sources */,
-				2200DA3F235647B700626EE7 /* DriverTableViewCell2.swift in Sources */,
 				22302DF923377C2F0069B46B /* RequestManager.swift in Sources */,
 				2207A9B423368DE5004BC4A3 /* DriverTableViewController.swift in Sources */,
+				2219810B2358B7B4003D838D /* TrackMainTableViewCell.swift in Sources */,
 				2207A9B223368DC5004BC4A3 /* RaceTrackTableViewController.swift in Sources */,
 				22D57DC1234CDDCA00567D13 /* ConstructorTableViewCell.swift in Sources */,
+				22982998235796F100A2DCD3 /* DriverMainTableViewCell.swift in Sources */,
 				22D57DC5234CE60100567D13 /* ConstructorTableViewController.swift in Sources */,
-				2200DA432356695F00626EE7 /* DriverDetailTableViewController.swift in Sources */,
 				22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */,
+				2298299A2357971300A2DCD3 /* DriverInfoTableViewCell.swift in Sources */,
+				22B140C1235F9E5A00B9AE4F /* MapViewController.swift in Sources */,
 				22A2FB482338E1D100132741 /* DriverModel.swift in Sources */,
 				22DEBFB6233B90F000E5C643 /* Country.swift in Sources */,
 				221D56B22356F24C00E0ADB8 /* DriverManager.swift in Sources */,
 				22CFCF96234E767900CC4844 /* Circuit.swift in Sources */,
-				2200DA412356520D00626EE7 /* DetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
