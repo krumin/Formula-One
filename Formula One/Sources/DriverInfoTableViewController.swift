@@ -33,7 +33,7 @@ class DriverInfoTableViewController: UIViewController, UITableViewDelegate, UITa
 // MARK: - UITableViewDataSource
 
 extension DriverInfoTableViewController {
- 
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
     return 2
@@ -81,17 +81,17 @@ extension DriverInfoTableViewController {
     }
   }
   
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
-  
-  if indexPath.row == 0 {
-    if let driver = driverStanding {
-      showSafari(with: driver)      
+    
+    if indexPath.row == 0 {
+      if let driver = driverStanding {
+        showSafari(with: driver)      
+      }
     }
   }
-}
   
-func showSafari(with standing:DriverStandings) {
+  func showSafari(with standing:DriverStandings) {
     let constructorsUrl = standing.driver
     guard let url = URL(string: constructorsUrl.url) else { return }
     

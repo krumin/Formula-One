@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TrackInfoTableViewCell: UITableViewCell {
-
+class RaceResultTableViewCell: UITableViewCell {
+  
   @IBOutlet weak var positionTextLabel: UILabel!
   @IBOutlet weak var gridPositionTextLabel: UILabel!
   @IBOutlet weak var driverNameTextLabel: UILabel!
@@ -16,8 +16,19 @@ class TrackInfoTableViewCell: UITableViewCell {
   
   func load(with result: RaceResultsModel, number: Int) {
     positionTextLabel.text = String(number)
-    gridPositionTextLabel.text = String(result.grid)
+    gridPositionTextLabel.text = String(result.startGrid)
     driverNameTextLabel.text = result.driver.fullName
-    raceTimeTextLabel.text = result.resultTime
+    
+    
+    var resultRace: String = ""
+    
+    if let result = result.resultRaceTime {
+      resultRace = result
+    } else {
+      resultRace = result.status
+    }
+    
+    raceTimeTextLabel.text = resultRace
+    
   }
 }

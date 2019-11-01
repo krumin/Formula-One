@@ -74,7 +74,7 @@ extension DriverTableViewController {
 // MARK: - Navigation
 
 extension DriverTableViewController {
-
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let viewControllerSegue = "driverImageSegue"
     if segue.identifier == viewControllerSegue {

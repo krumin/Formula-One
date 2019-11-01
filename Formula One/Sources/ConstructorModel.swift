@@ -19,9 +19,6 @@ struct ConstructorModel {
     let constructorIdString = json["constructorId"].stringValue
     constructorId = Car(rawValue: constructorIdString) ?? .unknow
     
-//    let constructorUlrString = json["url"].stringValue
-//    url = Car(rawValue: constructorUlrString) ?? .unknow
-//
     url = json["url"].stringValue
     name = json["name"].stringValue
     

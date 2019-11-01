@@ -13,6 +13,7 @@ class DetailTrackViewController: UIViewController, UITableViewDelegate, UITableV
     case qualifying
     case results
   }
+  
   var selectedType: RaceType = .qualifying
   
   @IBOutlet weak var trackImageView: UIImageView!
@@ -36,24 +37,23 @@ class DetailTrackViewController: UIViewController, UITableViewDelegate, UITableV
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    //tableView.estimatedRowHeight = 44
     guard let race = race else {
       assertionFailure("no race")
       return
     }
     
     trackImageView.image = race.circuit.image
-    trackNameTextLabel.text = race.locality
+    trackNameTextLabel.text = race.locality 
     
     title = race.raceName
     
     loadData(for: race, success: {
-      print("test. data is loaded")
+      print("data is loaded")
       DispatchQueue.main.async {
         self.tableView.reloadData()
       }
     }, failure: { error in
-      print("test. data is not loaded. error: \(error)")
+      print("data is not loaded. error: \(error)")
     })
   }
   
@@ -106,39 +106,54 @@ extension DetailTrackViewController {
     case .qualifying:
       return qualifying.count
     case .results:
-      return results.count
+      if results.count > 0 {
+        return results.count + 1
+      } else {
+        return results.count
+      }
     }
-    //      if segmentedControl.selectedSegmentIndex == 0 {
-    //        return qualifying.count
-    //      } else {
-    //        tableView.reloadData()
-    //        return results.count
-    //      }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     switch selectedType {
     case .qualifying:
-      guard let mainCell = tableView.dequeueReusableCell(withIdentifier: "mailCell", for: indexPath) as? TrackMainTableViewCell else {
+      guard let qualifyingResultCell = tableView.dequeueReusableCell(withIdentifier: "qualifyingResultCell", for: indexPath) as? QualifyingResultTableViewCell else {
         
         return UITableViewCell()
       }
       let result = qualifying[indexPath.row]
-      mainCell.load(with: result, number: indexPath.row + 1)
+      qualifyingResultCell.load(with: result, number: indexPath.row + 1)
       
-      return mainCell
+      return qualifyingResultCell
       
     case .results:
-      guard let infoCell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as? TrackInfoTableViewCell else {
+      if indexPath.row == results.count {
+        //print("test. index path: \(indexPath.row)")
+        //print("test. is last")
+        guard let fastLapCell = tableView.dequeueReusableCell(withIdentifier: "fastLapCell", for: indexPath) as? RaceFastLapTableViewCell else {
+          
+          return UITableViewCell()
+        }
         
-        return UITableViewCell()
+        if let fastResult = results.first(where: { $0.rank == 1 }) {
+          fastLapCell.load(with: fastResult)
+        }
+        return fastLapCell
+        
+      } else {
+        
+        //print("test. index path: \(indexPath.row)")
+        //print("test. not last")
+        guard let raceResultCell = tableView.dequeueReusableCell(withIdentifier: "raceResultCell", for: indexPath) as? RaceResultTableViewCell else {
+          
+          return UITableViewCell()
+        }
+        let result = results[indexPath.row]
+        raceResultCell.load(with: result, number: indexPath.row + 1)
+        
+        return raceResultCell
       }
-      let result = results[indexPath.row]
-      infoCell.load(with: result, number: indexPath.row + 1)
-  
-      return infoCell
-      
     }
   }
 }

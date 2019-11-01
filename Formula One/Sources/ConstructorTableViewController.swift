@@ -67,11 +67,11 @@ extension ConstructorTableViewController {
     showSafari(with: standing)
   }
   
-    func showSafari(with standing:ConstructorStandings) {
-      let constructorsUrl = standing.constructor
-      guard let url = URL(string: constructorsUrl.url) else { return }
-  
-      let safariVC = SFSafariViewController(url: url)
-      self.present(safariVC, animated: true, completion: nil)
-    }
+  func showSafari(with standing:ConstructorStandings) {
+    let constructorsUrl = standing.constructor
+    guard let url = URL(string: constructorsUrl.url) else { return }
+    
+    let safariVC = SFSafariViewController(url: url)
+    self.present(safariVC, animated: true, completion: nil)
+  }
 }

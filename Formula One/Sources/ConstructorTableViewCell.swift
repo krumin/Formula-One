@@ -8,7 +8,7 @@
 import UIKit
 
 class ConstructorTableViewCell: UITableViewCell {
-
+  
   @IBOutlet weak var positionTextLabel: UILabel!
   @IBOutlet weak var constructorsTextLabel: UILabel!
   @IBOutlet weak var pointsTextLabel: UILabel!

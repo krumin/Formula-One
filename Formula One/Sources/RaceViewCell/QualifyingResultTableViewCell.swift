@@ -8,40 +8,34 @@
 
 import UIKit
 
-class TrackMainTableViewCell: UITableViewCell {
-
+class QualifyingResultTableViewCell: UITableViewCell {
+  
   @IBOutlet weak var positionTextLabel: UILabel!
   @IBOutlet weak var driverNameTextLabel: UILabel!
   @IBOutlet weak var lapTimeTextLabel: UILabel!
-  
-//  enum QualifyingType: Int {
-//    case q3
-//    case q2
-//    case q1
-//  }
   
   
   func load(with result: QualifyingResultsModel, number: Int) {
     positionTextLabel.text = String(number)
     driverNameTextLabel.text = result.driver.fullName
-    lapTimeTextLabel.text = result.q3
+    
+    let resultQ3 = result.q3
+    let resultQ2 = result.q2
+    let resultQ1 = result.q1
+    
+    var resultLaps: String = ""
+    
     switch number {
     case 0...10:
-      print("\(result.q3)")
+      resultLaps = resultQ3
     case 10...15:
-      print("\(result.q2)")
+      resultLaps = resultQ2
     case 15...20:
-      print("\(result.q1)")
+      resultLaps = resultQ1
     default:
       break
     }
-//    switch selectedType {
-//    case .q3:
-//      print("\(result.q3)")
-//    case .q2:
-//      print("\(result.q2)")
-//    case .q1:
-//      print("\(result.q1)")
-//    }
+    
+    lapTimeTextLabel.text = resultLaps
   }
 }

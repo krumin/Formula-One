@@ -12,23 +12,24 @@ import SwiftyJSON
 struct RaceResultsModel {
   let driver: DriverModel
   let constructor: ConstructorModel
-  let grid: Int
-  let laps: Int
+  let startGrid: Int
+  let totalLaps: Int
   let status: String
-  let resultTime: String
+  let resultRaceTime: String?
+  let rank: Int
   let lap: Int
-  let timeLap: String
+  let fastTimeLap: String
   
   init(with json: JSON) {
     driver = DriverModel(with: json["Driver"])
     constructor = ConstructorModel(with: json["Constructor"])
     
-    grid = json["grid"].intValue
-    laps = json["laps"].intValue
+    startGrid = json["grid"].intValue
+    totalLaps = json["laps"].intValue
     status = json["status"].stringValue
-    resultTime = json["Time"]["time"].stringValue
+    resultRaceTime = json["Time"]["time"].string
     lap = json["FastestLap"]["lap"].intValue
-    timeLap = json["FastestLap"]["Time"]["time"].stringValue
-    
+    fastTimeLap = json["FastestLap"]["Time"]["time"].stringValue
+    rank = json["FastestLap"]["rank"].intValue
   }
 }

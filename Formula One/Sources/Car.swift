@@ -48,31 +48,4 @@ enum Car: String {
       return UIImage(named: "Cars/Unknow.png")
     }
   }
-  
-//  var urlConstructor: URL? {
-//    switch self {
-//    case .mersedes:
-//      return URL(string: "http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One")
-//    case .ferrari:
-//      return URL(string: "http://en.wikipedia.org/wiki/Scuderia_Ferrari")
-//    case .alfa:
-//      return URL(string: "http://en.wikipedia.org/wiki/Alfa_Romeo_in_Formula_One")
-//    case .toroRosso:
-//      return URL(string: "http://en.wikipedia.org/wiki/Scuderia_Toro_Rosso")
-//    case .haas:
-//      return URL(string: "http://en.wikipedia.org/wiki/Haas_F1_Team")
-//    case .racingPoint:
-//      return URL(string: "http://en.wikipedia.org/wiki/Racing_Point_F1_Team")
-//    case .mclaren:
-//      return URL(string: "http://en.wikipedia.org/wiki/McLaren")
-//    case .redBull:
-//      return URL(string: "http://en.wikipedia.org/wiki/Red_Bull_Racing")
-//    case .renault:
-//      return URL(string: "http://en.wikipedia.org/wiki/Renault_in_Formula_One")
-//    case .williams:
-//      return URL(string: "http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering")
-//    case .unknow:
-//      return URL(string: "https://www.google.com")
-//    }
-//  }
 }
