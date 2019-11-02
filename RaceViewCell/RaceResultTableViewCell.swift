@@ -29,6 +29,5 @@ class RaceResultTableViewCell: UITableViewCell {
     }
     
     raceTimeTextLabel.text = resultRace
-    
   }
 }

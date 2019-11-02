@@ -19,6 +19,5 @@ class RaceFastLapTableViewCell: UITableViewCell {
     driverNameTextLabel.text = result.driver.fullName
     lapTextLabel.text = "Lap :\(String(result.lap)),"
     timeTextLabel.text = result.fastTimeLap
-    
   }
 }

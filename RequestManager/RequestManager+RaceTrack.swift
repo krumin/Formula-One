@@ -84,5 +84,4 @@ extension RequestManager {
       }
       }.resume()
   }
-  
 }

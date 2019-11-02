@@ -22,7 +22,5 @@ class DriverTableViewCell: UITableViewCell {
     positionDriverTextLabel.text = String(standing.position)
     pointsDriverTextLabel.text = String(standing.points)
     nationalityDriverImageView.image = driver.nationalityDriver.flag
-    
   }
-  
 }

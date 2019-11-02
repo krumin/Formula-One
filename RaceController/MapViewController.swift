@@ -54,6 +54,8 @@ class MapViewController: UIViewController {
   
 }
 
+// MARK: - MKMapViewDelegate
+
 extension MapViewController: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     guard !(annotation is MKUserLocation) else { return nil }
@@ -74,5 +76,4 @@ extension MapViewController: MKMapViewDelegate {
     annotationView?.pinTintColor = .red
     return annotationView
   }
-  
 }

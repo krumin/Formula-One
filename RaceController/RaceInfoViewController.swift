@@ -86,7 +86,6 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   }
 }
 
-
 // MARK: - UITableViewDataSource
 
 extension RaceInfoViewController {

@@ -104,13 +104,11 @@ class RequestManager {
           let json = try JSON(data: data)
           let constructors = json["MRData"]["StandingsTable"]["StandingsLists"].arrayValue.first!["ConstructorStandings"].arrayValue
           
-          //          let constructorsModelArray = constructors.map { ConstructorStandings(with: $0) }
+          //let constructorsModelArray = constructors.map { ConstructorStandings(with: $0) }
           
-          //          или
-          
-          //          let constructorsModelArray = constructors.map { constructor in
-          //            return ConstructorStandings(with: constructor)
-          //          }
+          //let constructorsModelArray = constructors.map { constructor in
+          //return ConstructorStandings(with: constructor)
+          //}
           
           var constructorsModelArray: [ConstructorStandings] = []
           for constructorJson in constructors {

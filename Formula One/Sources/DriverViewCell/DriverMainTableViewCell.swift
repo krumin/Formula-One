@@ -16,6 +16,4 @@ class DriverMainTableViewCell: UITableViewCell {
     let driver = standing.driver
     driverNameTextLabel.text = driver.fullName
   }
-  
-  
 }

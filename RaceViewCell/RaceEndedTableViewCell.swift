@@ -18,6 +18,5 @@ class RaceEndedTableViewCell: UITableViewCell {
     let flag = tracks.country.flag
     raceName.text = tracks.raceName
     flagImageView.image = flag
-    
   }
 }

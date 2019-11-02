@@ -46,41 +46,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceInfoViewController.swift; path = "Formula One/Sources/RaceInfoViewController.swift"; sourceTree = "<group>"; };
-		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceTrackTableViewController.swift; path = "Formula One/Sources/RaceTrackTableViewController.swift"; sourceTree = "<group>"; };
-		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverTableViewController.swift; path = "Formula One/Sources/DriverTableViewController.swift"; sourceTree = "<group>"; };
+		2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceInfoViewController.swift; sourceTree = "<group>"; };
+		2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewController.swift; sourceTree = "<group>"; };
+		2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
 		2219810A2358B7B4003D838D /* QualifyingResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualifyingResultTableViewCell.swift; sourceTree = "<group>"; };
-		2219810C2358B7E5003D838D /* RaceResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceResultTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/RaceResultTableViewCell.swift"; sourceTree = "<absolute>"; };
-		221D56B12356F24C00E0ADB8 /* DriverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverManager.swift; path = "Formula One/Sources/DriverManager.swift"; sourceTree = "<group>"; };
-		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceTrackModel.swift; path = "Formula One/Sources/RaceTrackModel.swift"; sourceTree = "<group>"; };
-		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = "Formula One/Sources/RequestManager.swift"; sourceTree = "<group>"; };
+		2219810C2358B7E5003D838D /* RaceResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultTableViewCell.swift; sourceTree = "<group>"; };
+		221D56B12356F24C00E0ADB8 /* DriverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverManager.swift; sourceTree = "<group>"; };
+		22302DF6233772FA0069B46B /* RaceTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackModel.swift; sourceTree = "<group>"; };
+		22302DF823377C2F0069B46B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackTableViewCell.swift; sourceTree = "<group>"; };
-		22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceResultsModel.swift; path = "Formula One/Sources/RaceResultsModel.swift"; sourceTree = "<group>"; };
-		22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QualifyingResultsModel.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/QualifyingResultsModel.swift"; sourceTree = "<absolute>"; };
+		22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultsModel.swift; sourceTree = "<group>"; };
+		22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualifyingResultsModel.swift; sourceTree = "<group>"; };
 		223BB57E2368C78B0016E8B3 /* RaceFastLapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceFastLapTableViewCell.swift; sourceTree = "<group>"; };
-		223E4B08235E3CED0007AC47 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Car.swift; path = "Formula One/Sources/Car.swift"; sourceTree = "<group>"; };
-		2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverInfoTableViewController.swift; path = "Formula One/Sources/DriverInfoTableViewController.swift"; sourceTree = "<group>"; };
+		223E4B08235E3CED0007AC47 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoTableViewController.swift; sourceTree = "<group>"; };
 		22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMainTableViewCell.swift; sourceTree = "<group>"; };
-		229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverInfoTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/DriverInfoTableViewCell.swift"; sourceTree = "<absolute>"; };
+		229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoTableViewCell.swift; sourceTree = "<group>"; };
 		229D2051233531CE005DBA8C /* Formula One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Formula One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229D2054233531CE005DBA8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229D2059233531CE005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229D205B233531D0005DBA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229D205E233531D0005DBA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229D2060233531D0005DBA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverModel.swift; path = "Formula One/Sources/DriverModel.swift"; sourceTree = "<group>"; };
-		22B140C0235F9E5A00B9AE4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "Formula One/Sources/MapViewController.swift"; sourceTree = "<group>"; };
+		22A2FB472338E1D100132741 /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		22B140C0235F9E5A00B9AE4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		22B140C2235F9F1F00B9AE4F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		22CFCF95234E767900CC4844 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Circuit.swift; path = "Formula One/Sources/Circuit.swift"; sourceTree = "<group>"; };
-		22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewCell.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorTableViewCell.swift"; sourceTree = "<absolute>"; };
-		22D57DC2234CE28300567D13 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorStandings.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorStandings.swift"; sourceTree = "<absolute>"; };
-		22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorTableViewController.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorTableViewController.swift"; sourceTree = "<absolute>"; };
+		22CFCF95234E767900CC4844 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorTableViewCell.swift; sourceTree = "<group>"; };
+		22D57DC2234CE28300567D13 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorStandings.swift; sourceTree = "<group>"; };
+		22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorTableViewController.swift; sourceTree = "<group>"; };
 		22D5FADA236B357200BFAFE1 /* RaceEndedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceEndedTableViewCell.swift; sourceTree = "<group>"; };
 		22D5FADC236B35F000BFAFE1 /* RaceBeginningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceBeginningTableViewCell.swift; sourceTree = "<group>"; };
-		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTrackViewController.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/DetailTrackViewController.swift"; sourceTree = "<absolute>"; };
-		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstructorModel.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/ConstructorModel.swift"; sourceTree = "<absolute>"; };
-		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Country.swift; path = "/Users/macos/Desktop/Formula One/Formula One/Sources/Country.swift"; sourceTree = "<absolute>"; };
-		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverStandings.swift; path = "Formula One/Sources/DriverStandings.swift"; sourceTree = "<group>"; };
+		22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTrackViewController.swift; sourceTree = "<group>"; };
+		22DEBFB3233B703900E5C643 /* ConstructorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorModel.swift; sourceTree = "<group>"; };
+		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
 		22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 		22FDF6BE236A260F00602553 /* RequestManager+RaceTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestManager+RaceTrack.swift"; sourceTree = "<group>"; };
 		3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,10 +104,10 @@
 		221989442337FB7C00EAFDD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				223811382367797F0004CF12 /* Race */,
-				223811362367792B0004CF12 /* Driver */,
-				223811372367793B0004CF12 /* Constructor */,
-				22381139236779A20004CF12 /* RequestManager */,
+				22DF0565236DAE9000646DC3 /* Race */,
+				22DF0564236DAE5400646DC3 /* Driver */,
+				22DF0562236DAE1300646DC3 /* Constructor */,
+				22DF0561236DADD500646DC3 /* RequestManager */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 		221989452337FBA600EAFDD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				223811302367770D0004CF12 /* RaceViewCell */,
-				22381131236777460004CF12 /* DriverView */,
-				22381132236777A00004CF12 /* ConstructorView */,
+				22DF055F236DAD5E00646DC3 /* RaceViewCell */,
+				22381131236777460004CF12 /* DriverViewCell */,
+				22381132236777A00004CF12 /* ConstructorViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -125,114 +125,31 @@
 		221989472337FBE200EAFDD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				22381133236777DF0004CF12 /* RaceController */,
-				223811342367782F0004CF12 /* DriverController */,
-				22381135236778A80004CF12 /* ConstructorController */,
+				22DF055B236DAC2A00646DC3 /* RaceController */,
+				22DF055A236DABEC00646DC3 /* DriverController */,
+				22DF055E236DACC900646DC3 /* ConstructorController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		223811302367770D0004CF12 /* RaceViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
-				22D5FADC236B35F000BFAFE1 /* RaceBeginningTableViewCell.swift */,
-				22D5FADA236B357200BFAFE1 /* RaceEndedTableViewCell.swift */,
-				2219810A2358B7B4003D838D /* QualifyingResultTableViewCell.swift */,
-				2219810C2358B7E5003D838D /* RaceResultTableViewCell.swift */,
-				223BB57E2368C78B0016E8B3 /* RaceFastLapTableViewCell.swift */,
-			);
-			name = RaceViewCell;
-			path = "Formula One/Sources/RaceViewCell";
-			sourceTree = "<group>";
-		};
-		22381131236777460004CF12 /* DriverView */ = {
+		22381131236777460004CF12 /* DriverViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */,
 				22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */,
 				229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */,
 			);
-			name = DriverView;
-			path = "Formula One/Sources/DriverView";
+			name = DriverViewCell;
+			path = "Formula One/Sources/DriverViewCell";
 			sourceTree = "<group>";
 		};
-		22381132236777A00004CF12 /* ConstructorView */ = {
+		22381132236777A00004CF12 /* ConstructorViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */,
 			);
-			name = ConstructorView;
-			path = "Formula One/Sources/ConstructorView";
-			sourceTree = "<group>";
-		};
-		22381133236777DF0004CF12 /* RaceController */ = {
-			isa = PBXGroup;
-			children = (
-				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
-				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
-				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
-				22B140C0235F9E5A00B9AE4F /* MapViewController.swift */,
-			);
-			name = RaceController;
-			sourceTree = "<group>";
-		};
-		223811342367782F0004CF12 /* DriverController */ = {
-			isa = PBXGroup;
-			children = (
-				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
-				2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */,
-			);
-			name = DriverController;
-			sourceTree = "<group>";
-		};
-		22381135236778A80004CF12 /* ConstructorController */ = {
-			isa = PBXGroup;
-			children = (
-				22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */,
-			);
-			name = ConstructorController;
-			sourceTree = "<group>";
-		};
-		223811362367792B0004CF12 /* Driver */ = {
-			isa = PBXGroup;
-			children = (
-				22A2FB472338E1D100132741 /* DriverModel.swift */,
-				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
-				221D56B12356F24C00E0ADB8 /* DriverManager.swift */,
-			);
-			name = Driver;
-			sourceTree = "<group>";
-		};
-		223811372367793B0004CF12 /* Constructor */ = {
-			isa = PBXGroup;
-			children = (
-				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
-				22D57DC2234CE28300567D13 /* ConstructorStandings.swift */,
-				223E4B08235E3CED0007AC47 /* Car.swift */,
-			);
-			name = Constructor;
-			sourceTree = "<group>";
-		};
-		223811382367797F0004CF12 /* Race */ = {
-			isa = PBXGroup;
-			children = (
-				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
-				22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */,
-				22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */,
-				22DEBFB5233B90F000E5C643 /* Country.swift */,
-				22CFCF95234E767900CC4844 /* Circuit.swift */,
-			);
-			name = Race;
-			sourceTree = "<group>";
-		};
-		22381139236779A20004CF12 /* RequestManager */ = {
-			isa = PBXGroup;
-			children = (
-				22302DF823377C2F0069B46B /* RequestManager.swift */,
-				22FDF6BE236A260F00602553 /* RequestManager+RaceTrack.swift */,
-			);
-			name = RequestManager;
+			name = ConstructorViewCell;
+			path = "Formula One/Sources/ConstructorViewCell";
 			sourceTree = "<group>";
 		};
 		229D2048233531CE005DBA8C = {
@@ -266,6 +183,88 @@
 				229D2060233531D0005DBA8C /* Info.plist */,
 			);
 			path = "Formula One";
+			sourceTree = "<group>";
+		};
+		22DF055A236DABEC00646DC3 /* DriverController */ = {
+			isa = PBXGroup;
+			children = (
+				2298299523578FE700A2DCD3 /* DriverInfoTableViewController.swift */,
+				2207A9B323368DE5004BC4A3 /* DriverTableViewController.swift */,
+			);
+			path = DriverController;
+			sourceTree = "<group>";
+		};
+		22DF055B236DAC2A00646DC3 /* RaceController */ = {
+			isa = PBXGroup;
+			children = (
+				2207A9AF23368CBE004BC4A3 /* RaceInfoViewController.swift */,
+				2207A9B123368DC5004BC4A3 /* RaceTrackTableViewController.swift */,
+				22DEBFB1233B6D3800E5C643 /* DetailTrackViewController.swift */,
+				22B140C0235F9E5A00B9AE4F /* MapViewController.swift */,
+			);
+			path = RaceController;
+			sourceTree = "<group>";
+		};
+		22DF055E236DACC900646DC3 /* ConstructorController */ = {
+			isa = PBXGroup;
+			children = (
+				22D57DC4234CE60100567D13 /* ConstructorTableViewController.swift */,
+			);
+			path = ConstructorController;
+			sourceTree = "<group>";
+		};
+		22DF055F236DAD5E00646DC3 /* RaceViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				22302DFA23377EA30069B46B /* RaceTrackTableViewCell.swift */,
+				22D5FADC236B35F000BFAFE1 /* RaceBeginningTableViewCell.swift */,
+				22D5FADA236B357200BFAFE1 /* RaceEndedTableViewCell.swift */,
+				2219810C2358B7E5003D838D /* RaceResultTableViewCell.swift */,
+				2219810A2358B7B4003D838D /* QualifyingResultTableViewCell.swift */,
+				223BB57E2368C78B0016E8B3 /* RaceFastLapTableViewCell.swift */,
+			);
+			path = RaceViewCell;
+			sourceTree = "<group>";
+		};
+		22DF0561236DADD500646DC3 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				22FDF6BE236A260F00602553 /* RequestManager+RaceTrack.swift */,
+				22302DF823377C2F0069B46B /* RequestManager.swift */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		22DF0562236DAE1300646DC3 /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				22D57DC2234CE28300567D13 /* ConstructorStandings.swift */,
+				22DEBFB3233B703900E5C643 /* ConstructorModel.swift */,
+				223E4B08235E3CED0007AC47 /* Car.swift */,
+			);
+			path = Constructor;
+			sourceTree = "<group>";
+		};
+		22DF0564236DAE5400646DC3 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				22F73F2B23387D7D00F2AABD /* DriverStandings.swift */,
+				22A2FB472338E1D100132741 /* DriverModel.swift */,
+				221D56B12356F24C00E0ADB8 /* DriverManager.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		22DF0565236DAE9000646DC3 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				22302DF6233772FA0069B46B /* RaceTrackModel.swift */,
+				22355DCD235B7CB100E967F2 /* RaceResultsModel.swift */,
+				22355DCF235B7D1400E967F2 /* QualifyingResultsModel.swift */,
+				22DEBFB5233B90F000E5C643 /* Country.swift */,
+				22CFCF95234E767900CC4844 /* Circuit.swift */,
+			);
+			path = Race;
 			sourceTree = "<group>";
 		};
 		6409B02DFE53000D689DC573 /* Frameworks */ = {
