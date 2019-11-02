@@ -20,7 +20,13 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var segmentedControl: UISegmentedControl!
- 
+  @IBOutlet weak var timerLabel: UILabel!
+  @IBOutlet weak var raceNameLabel: UILabel!
+  @IBOutlet weak var infoLabel: UILabel!
+  
+  var seconds = 60
+  var timer = Timer()
+  
   var race: RaceTrackModel?
   
   private var track = [RaceTrackModel]() {
@@ -34,10 +40,9 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
       
-//      guard let race = race else {
-//        assertionFailure("no race")
-//        return
-//      }
+      runTimer()
+      
+      infoLabel.text = "Grand Prix start"
       
       RequestManager.shared.loadRequestTrack(success: { [weak self] tracks in
         guard let self = self else { return }
@@ -63,7 +68,24 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     selectedSegment = race
     tableView.reloadData()
   }
+  
+  func runTimer() {
+    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+  }
+  @objc func updateTimer() {
+    seconds -= 1
+    timerLabel.text = timeString(interval: TimeInterval(seconds))
+  }
+  func timeString(interval: TimeInterval) -> String {
+    let interval = Int(interval)
+    let days = (interval / 86400)
+    let hours = (interval / 3600)
+    let minutes = (interval / 60) % 60
+    let seconds = interval % 60
+    return String(format: "%02i:%02i:%02i:%02i", days, hours, minutes, seconds)
+  }
 }
+
 
 // MARK: - UITableViewDataSource
 
