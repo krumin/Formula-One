@@ -139,8 +139,7 @@
 				22982997235796F100A2DCD3 /* DriverMainTableViewCell.swift */,
 				229829992357971300A2DCD3 /* DriverInfoTableViewCell.swift */,
 			);
-			name = DriverViewCell;
-			path = "Formula One/Sources/DriverViewCell";
+			path = DriverViewCell;
 			sourceTree = "<group>";
 		};
 		22381132236777A00004CF12 /* ConstructorViewCell */ = {
@@ -148,8 +147,7 @@
 			children = (
 				22D57DC0234CDDCA00567D13 /* ConstructorTableViewCell.swift */,
 			);
-			name = ConstructorViewCell;
-			path = "Formula One/Sources/ConstructorViewCell";
+			path = ConstructorViewCell;
 			sourceTree = "<group>";
 		};
 		229D2048233531CE005DBA8C = {
