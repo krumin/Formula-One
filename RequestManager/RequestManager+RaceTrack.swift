@@ -12,13 +12,14 @@ import SwiftyJSON
 extension RequestManager {
   
   func loadResultsFor(race: RaceTrackModel, success: @escaping ([RaceResultsModel]) -> (), onError: @escaping (MyError) -> ()) {
-    guard let myURL = URL(string: "https://ergast.com/api/f1/2019/\(race.round)/results.json") else {
+    let fullURLString = createURL(from: .results(round: race.round))
+    guard let url = URL(string: fullURLString) else {
       onError(.badUrl)
       return
     }
     let session = URLSession.shared
     
-    session.dataTask(with: myURL) { (data, response, error) in
+    session.dataTask(with: url) { (data, response, error) in
       if let data = data {
         
         do {
@@ -49,13 +50,14 @@ extension RequestManager {
   }
   
   func loadQualifyingResultsFor(race: RaceTrackModel, success: @escaping ([QualifyingResultsModel]) -> (), onError: @escaping (MyError) -> ()) {
-    guard let myURL = URL(string: "https://ergast.com/api/f1/2019/\(race.round)/qualifying.json") else {
+    let fullURLString = createURL(from: .qualifying(round: race.round))
+    guard let url = URL(string: fullURLString) else {
       onError(.badUrl)
       return
     }
     let session = URLSession.shared
     
-    session.dataTask(with: myURL) { (data, response, error) in
+    session.dataTask(with: url) { (data, response, error) in
       if let data = data {
         
         do {

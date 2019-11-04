@@ -11,24 +11,58 @@ import SwiftyJSON
 
 class RequestManager {
   
+  enum Endpoint {
+    case race
+    case driver
+    case constructor
+    case results(round: Int)
+    case qualifying(round: Int)
+    
+    var value: String {
+      switch self {
+      case .race:
+        return ""
+      case .driver:
+        return "/driverStandings"
+      case .constructor:
+        return "/constructorStandings"
+      case .results(let round):
+        return "/\(round)/results"
+      case .qualifying(let round):
+        return "/\(round)/qualifying"
+      }
+    }
+  }
+  
   enum MyError: Error {
     case badUrl
     case badData(Error)
     case noData(Error)
     case undefined
   }
+  
+  func createURL(from url: Endpoint) -> String {
+    let url = "\(baseURL)/\(season)" + url.value + ".json"
+    print("\(url)")
+    return url
+    
+  }
+  
+  private let baseURL = "http://ergast.com/api/f1"
+  private let season = "2019"
   static let shared = RequestManager()
   private init() {}
   
   func loadRequestTrack(success: @escaping ([RaceTrackModel]) -> (), onError: @escaping (MyError) -> ()) {
-    guard let myURL = URL(string: "http://ergast.com/api/f1/current.json") else {
+    let fullURLString = createURL(from: .race)
+    guard let url = URL(string: fullURLString) else {
       onError(.badUrl)
       return
     }
     
     let session = URLSession.shared
     
-    session.dataTask(with: myURL) { (data, response, error) in
+    session.dataTask(with: url) { (data, response, error) in
       if let data = data {
         
         do {
@@ -59,7 +93,8 @@ class RequestManager {
   }
   
   func loadRequestDriver(success: @escaping ([DriverStandings]) -> (), onError: @escaping (MyError) -> ()) {
-    guard let myURL = URL(string: "http://ergast.com/api/f1/2019/driverStandings.json") else {
+    let fullURLString = createURL(from: .driver)
+    guard let myURL = URL(string: fullURLString) else {
       onError(.badUrl)
       return
     }
@@ -91,7 +126,8 @@ class RequestManager {
   }
   
   func loadRequestConstructor(success: @escaping ([ConstructorStandings]) -> (), onError: @escaping (MyError) -> ()) {
-    guard let myURL = URL(string: "https://ergast.com/api/f1/2019/constructorStandings.json") else {
+    let fullURLString = createURL(from: .constructor)
+    guard let myURL = URL(string: fullURLString) else {
       onError(.badUrl)
       return
     }
@@ -128,5 +164,4 @@ class RequestManager {
       }
       }.resume()
   }
-  
 }

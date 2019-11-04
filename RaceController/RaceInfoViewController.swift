@@ -29,7 +29,17 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   
   var race: RaceTrackModel?
   
-  private var track = [RaceTrackModel]() {
+  var beginning: Date?
+  
+  var raceBeginning = [RaceTrackModel]() {
+    didSet {
+      DispatchQueue.main.async {
+        self.tableView.reloadData()
+      }
+    }
+  }
+  
+  var raceEnded = [RaceTrackModel]() {
     didSet {
       DispatchQueue.main.async {
         self.tableView.reloadData()
@@ -42,12 +52,12 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
       
       runTimer()
       
-      infoLabel.text = "Grand Prix start"
+      infoLabel.text = "Next race"
       
       RequestManager.shared.loadRequestTrack(success: { [weak self] tracks in
         guard let self = self else { return }
-        self.track = tracks
-        print("success: track count \(self.track.count)")
+        self.raceBeginning = tracks
+        print("success: track count \(self.raceBeginning.count)")
         }, onError: { error in
           switch error {
           case .badUrl:
@@ -60,7 +70,16 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
             print("undefined")
           }
       })
+      
+      if let race = race {
+        let date = Date()
+        if date < race.fullDate {
+          beginning = date
+          
+        }
+      }
   }
+  
   
   @IBAction func segmentedTap(_ sender: Any) {
     let segment = segmentedControl.selectedSegmentIndex
@@ -82,7 +101,7 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     let hours = (interval / 3600)
     let minutes = (interval / 60) % 60
     let seconds = interval % 60
-    return String(format: "%02i:%02i:%02i:%02i", days, hours, minutes, seconds)
+    return String(format: "%02i : %02i : %02i : %02i", days, hours, minutes, seconds)
   }
 }
 
@@ -93,9 +112,9 @@ extension RaceInfoViewController {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     switch selectedSegment {
     case .beginning:
-      return track.count
+      return raceBeginning.count
     case .ended:
-      return track.count
+      return raceEnded.count
     }
   }
   
@@ -106,7 +125,7 @@ extension RaceInfoViewController {
         
         return UITableViewCell()
       }
-      let tracks = track[indexPath.row]
+      let tracks = raceBeginning[indexPath.row]
       raceBeginningCell.loadData(with: tracks)
       return raceBeginningCell
 
@@ -115,7 +134,7 @@ extension RaceInfoViewController {
         
         return UITableViewCell()
       }
-      let tracks = track[indexPath.row]
+      let tracks = raceEnded[indexPath.row]
       raceEndedCell.loadData(with: tracks)
       return raceEndedCell
       
