@@ -112,7 +112,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Dxs-VL-CyP">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="Dxs-VL-CyP">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -253,7 +253,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="c1K-08-HEK">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="c1K-08-HEK">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -749,7 +749,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="nu4-N0-m8t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="race" translatesAutoresizingMaskIntoConstraints="NO" id="nu4-N0-m8t">
                                 <rect key="frame" x="0.0" y="20" width="375" height="237"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="JCP-jo-Eg3"/>
@@ -900,7 +900,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ZYl-zT-xqS" secondAttribute="trailing" constant="33" id="3bs-UV-tDb"/>
                                     <constraint firstItem="XoY-YF-AqT" firstAttribute="top" secondItem="exC-ao-F0q" secondAttribute="bottom" constant="-3" id="6a1-HY-tKZ"/>
@@ -1215,7 +1215,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="1920" height="1080"/>
         <image name="arrow" width="30" height="30"/>
         <image name="constructors" width="25" height="25"/>
         <image name="drivers" width="25" height="25"/>
@@ -1315,6 +1314,7 @@ AAAAAAAAAAAAAAAAE+Y
         </image>
         <image name="map" width="24" height="24"/>
         <image name="news" width="25" height="25"/>
+        <image name="race" width="640" height="670"/>
         <image name="raceInfo" width="25" height="25"/>
         <image name="raceTrack" width="25" height="25"/>
     </resources>
