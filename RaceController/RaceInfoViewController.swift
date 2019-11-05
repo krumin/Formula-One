@@ -28,7 +28,7 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   var timer = Timer()
   
   var race: RaceTrackModel?
-  
+  var nextRace: RaceTrackModel?
   var beginning: Date?
   
   var raceBeginning = [RaceTrackModel]() {
@@ -47,39 +47,68 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     }
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-      runTimer()
-      
-      infoLabel.text = "Next race"
-      
-      RequestManager.shared.loadRequestTrack(success: { [weak self] tracks in
-        guard let self = self else { return }
-        self.raceBeginning = tracks
-        print("success: track count \(self.raceBeginning.count)")
-        }, onError: { error in
-          switch error {
-          case .badUrl:
-            print("ooops. bad url")
-          case .badData(let error):
-            print("ooops. bad text error: \(error)")
-          case .noData(let myError):
-            print("no data error: \(myError.localizedDescription)")
-          case .undefined:
-            print("undefined")
-          }
-      })
-      
-      if let race = race {
-        let date = Date()
-        if date < race.fullDate {
-          beginning = date
-          
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    runTimer()
+    
+    infoLabel.text = "Next race"
+    
+    RequestManager.shared.loadRequestTrack(success: { [weak self] tracks in
+      guard let self = self else { return }
+      self.raceBeginning = self.getFutureTracks(tracks)
+      self.raceEnded = self.getPastTracks(tracks)
+      self.nextRace = self.getNextTrack(tracks: tracks)
+      print("success: track count \(self.raceBeginning.count)")
+      }, onError: { error in
+        switch error {
+        case .badUrl:
+          print("ooops. bad url")
+        case .badData(let error):
+          print("ooops. bad text error: \(error)")
+        case .noData(let myError):
+          print("no data error: \(myError.localizedDescription)")
+        case .undefined:
+          print("undefined")
         }
-      }
+    })
   }
   
+  func getFutureTracks(_ tracks: [RaceTrackModel]) -> [RaceTrackModel] {
+    let date = Date()
+    var arrayFutureTracks:[RaceTrackModel] = []
+    for track in tracks {
+      if date < track.fullDate {
+        arrayFutureTracks.append(track)
+        print(track)
+      }
+    }
+    return arrayFutureTracks
+  }
+  
+  func getNextTrack(tracks: [RaceTrackModel]) -> RaceTrackModel? {
+    var foundTrack: RaceTrackModel? = tracks.first
+    guard let unwrappedFoundTrack = foundTrack else { return nil }
+    for track in tracks {
+      if track.fullDate > unwrappedFoundTrack.fullDate {
+        foundTrack = track
+      }
+    }
+    return foundTrack
+  }
+  
+  // MARK: - Sort tracks
+  
+  func getPastTracks(_ tracks: [RaceTrackModel]) -> [RaceTrackModel] {
+    let date = Date()
+    var arrayPastTracks:[RaceTrackModel] = []
+    for track in tracks {
+      if date > track.fullDate {
+        arrayPastTracks.append(track)
+      }
+    }
+    return arrayPastTracks
+  }
   
   @IBAction func segmentedTap(_ sender: Any) {
     let segment = segmentedControl.selectedSegmentIndex
@@ -128,7 +157,7 @@ extension RaceInfoViewController {
       let tracks = raceBeginning[indexPath.row]
       raceBeginningCell.loadData(with: tracks)
       return raceBeginningCell
-
+      
     case.ended:
       guard let raceEndedCell = tableView.dequeueReusableCell(withIdentifier: "raceEndedCell", for: indexPath) as? RaceEndedTableViewCell else {
         
