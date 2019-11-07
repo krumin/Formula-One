@@ -45,6 +45,6 @@ struct RaceTrackModel {
     let fullDate = dateFormatter.date(from: fullString) ?? Date()
     self.fullDate = fullDate
     
-    url = json["url"].stringValue
+    url = json["Circuit"]["url"].stringValue
   }
 }
