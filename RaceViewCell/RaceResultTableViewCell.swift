@@ -14,11 +14,10 @@ class RaceResultTableViewCell: UITableViewCell {
   @IBOutlet weak var driverNameTextLabel: UILabel!
   @IBOutlet weak var raceTimeTextLabel: UILabel!
   
-  func load(with result: RaceResultsModel, number: Int) {
+  func loadData(with result: RaceResultsModel, number: Int) {
     positionTextLabel.text = String(number)
     gridPositionTextLabel.text = String(result.startGrid)
     driverNameTextLabel.text = result.driver.fullName
-    
     
     var resultRace: String = ""
     

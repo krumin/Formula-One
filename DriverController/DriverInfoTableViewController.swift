@@ -50,7 +50,7 @@ extension DriverInfoTableViewController {
       mainCell.selectionStyle = .none
       
       if let driver = driverStanding {
-        mainCell.load(with: driver)
+        mainCell.loadData(with: driver)
       }
       return mainCell
     } else {
@@ -62,7 +62,7 @@ extension DriverInfoTableViewController {
       infoCell.selectionStyle = .none
       
       if let driver = driverStanding {
-        infoCell.load(with: driver)
+        infoCell.loadData(with: driver)
       }
       return infoCell
     }

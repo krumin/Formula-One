@@ -19,7 +19,7 @@ class DriverInfoTableViewCell: UITableViewCell {
   @IBOutlet weak var nationalityTeamImageView: UIImageView!
   @IBOutlet weak var constructorIdImageView: UIImageView!
   
-  func load(with driverStanding: DriverStandings) {
+  func loadData(with driverStanding: DriverStandings) {
     let driver = driverStanding.driver
     let constructors = allNamesConstructors(constructors: driverStanding.constructors)
     

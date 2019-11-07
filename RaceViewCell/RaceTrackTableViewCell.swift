@@ -16,7 +16,7 @@ class RaceTrackTableViewCell: UITableViewCell {
   @IBOutlet weak var countryImage: UIImageView!
   @IBOutlet weak var raceDateTextLabel: UILabel!
   
-  func load(with tracks:RaceTrackModel) {
+  func loadData(with tracks:RaceTrackModel) {
     raceNameTextLabel.text = tracks.raceName
     raceNumberTextLabel.text = String(tracks.round)
     view.layer.cornerRadius = 15

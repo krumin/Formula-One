@@ -181,7 +181,7 @@ extension RaceInfoViewController {
         
         return UITableViewCell()
       }
-      
+      raceBeginningCell.selectionStyle = .none
       let tracks = raceBeginning[indexPath.row]
       raceBeginningCell.loadData(with: tracks)
       return raceBeginningCell
@@ -191,6 +191,7 @@ extension RaceInfoViewController {
         
         return UITableViewCell()
       }
+      raceEndedCell.selectionStyle = .none
       let tracks = raceEnded[indexPath.row]
       raceEndedCell.loadData(with: tracks)
       return raceEndedCell
@@ -230,6 +231,7 @@ extension RaceInfoViewController {
     timerCurrentTimeInterval = nextRace.fullDate.timeIntervalSinceNow
 
     // Before start timer it need stop
+    
     stopTimer()
 
     let timer = Timer.scheduledTimer(
@@ -241,9 +243,6 @@ extension RaceInfoViewController {
 
     self.timer = timer
 
-    // тут описание, глава Working with runloops
-    // https://www.hackingwithswift.com/articles/117/the-ultimate-guide-to-timer
-    // без этого когда скролишь таблицу, таймер останавливается
     RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
   }
 
@@ -257,7 +256,6 @@ extension RaceInfoViewController {
       stopTimer()
       timerLabel.text = "The race started!"
 
-      // тут когда таймер до нуля дошел, нужно скрыть контейнейр с days, minutes..
       //subtitlesContainer.isHidden = true
     } else {
       timerCurrentTimeInterval -= 1
@@ -265,8 +263,6 @@ extension RaceInfoViewController {
     }
   }
 
-  // формат надо как-то переделать. чтобы показывал типо 24 дня 23 часа(а не 576)
-  // я немного подправил, надо проверить
   func timeString(interval: TimeInterval) -> String {
     let interval = Int(interval)
     let days = (interval / 86400)

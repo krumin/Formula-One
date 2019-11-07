@@ -14,8 +14,7 @@ class QualifyingResultTableViewCell: UITableViewCell {
   @IBOutlet weak var driverNameTextLabel: UILabel!
   @IBOutlet weak var lapTimeTextLabel: UILabel!
   
-  
-  func load(with result: QualifyingResultsModel, number: Int) {
+  func loadData(with result: QualifyingResultsModel, number: Int) {
     positionTextLabel.text = String(number)
     driverNameTextLabel.text = result.driver.fullName
     

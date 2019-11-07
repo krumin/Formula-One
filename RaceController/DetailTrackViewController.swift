@@ -123,7 +123,7 @@ extension DetailTrackViewController {
         return UITableViewCell()
       }
       let result = qualifying[indexPath.row]
-      qualifyingResultCell.load(with: result, number: indexPath.row + 1)
+      qualifyingResultCell.loadData(with: result, number: indexPath.row + 1)
       
       return qualifyingResultCell
       
@@ -137,7 +137,7 @@ extension DetailTrackViewController {
         }
         
         if let fastResult = results.first(where: { $0.rank == 1 }) {
-          fastLapCell.load(with: fastResult)
+          fastLapCell.loadData(with: fastResult)
         }
         return fastLapCell
         
@@ -150,7 +150,7 @@ extension DetailTrackViewController {
           return UITableViewCell()
         }
         let result = results[indexPath.row]
-        raceResultCell.load(with: result, number: indexPath.row + 1)
+        raceResultCell.loadData(with: result, number: indexPath.row + 1)
         
         return raceResultCell
       }

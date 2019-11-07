@@ -15,7 +15,7 @@ class DriverTableViewCell: UITableViewCell {
   @IBOutlet weak var pointsDriverTextLabel: UILabel!
   @IBOutlet weak var nationalityDriverImageView: UIImageView!
   
-  func load(with standing: DriverStandings) {
+  func loadData(with standing: DriverStandings) {
     let driver = standing.driver
     
     driverNameTextLabel.text = driver.fullName

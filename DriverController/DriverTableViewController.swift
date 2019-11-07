@@ -57,7 +57,7 @@ extension DriverTableViewController {
     }
     cell.selectionStyle = .none
     let standing = standings[indexPath.row]
-    cell.load(with: standing)
+    cell.loadData(with: standing)
     return cell
   }
 }

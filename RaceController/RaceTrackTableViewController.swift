@@ -59,7 +59,7 @@ extension RaceTrackTableViewController {
     }
     cell.selectionStyle = .none
     let tracks = track[indexPath.row]
-    cell.load(with: tracks)
+    cell.loadData(with: tracks)
     return cell
   }
 }

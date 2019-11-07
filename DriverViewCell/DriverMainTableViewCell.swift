@@ -12,7 +12,7 @@ class DriverMainTableViewCell: UITableViewCell {
   
   @IBOutlet weak var driverNameTextLabel: UILabel!
   
-  func load(with standing: DriverStandings) {
+  func loadData(with standing: DriverStandings) {
     let driver = standing.driver
     driverNameTextLabel.text = driver.fullName
   }

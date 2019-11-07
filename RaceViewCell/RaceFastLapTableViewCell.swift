@@ -15,7 +15,7 @@ class RaceFastLapTableViewCell: UITableViewCell {
   @IBOutlet weak var lapTextLabel: UILabel!
   @IBOutlet weak var timeTextLabel: UILabel!
   
-  func load(with result: RaceResultsModel) {
+  func loadData(with result: RaceResultsModel) {
     driverNameTextLabel.text = result.driver.fullName
     lapTextLabel.text = "Lap :\(String(result.lap)),"
     timeTextLabel.text = result.fastTimeLap
