@@ -844,7 +844,7 @@
                                     <outlet property="delegate" destination="cTa-zg-z7s" id="dcg-Do-BKJ"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-PZ-wql">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-PZ-wql" customClass="RaceHeaderView" customModule="Formula_One" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="257" width="375" height="117"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exC-ao-F0q">

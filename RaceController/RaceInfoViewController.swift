@@ -8,6 +8,15 @@
 
 import UIKit
 
+class RaceHeaderView: UIView {
+  
+  func loadWithRace(_ race: RaceTrackModel) {
+    
+  }
+  
+}
+
+
 class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   enum Race: Int {
@@ -74,6 +83,21 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     })
   }
   
+  
+  func getNextTrack(tracks: [RaceTrackModel]) -> RaceTrackModel? {
+    var foundTrack: RaceTrackModel? = tracks.first
+    guard let unwrappedFoundTrack = foundTrack else { return nil }
+    for track in tracks {
+      if track.fullDate > unwrappedFoundTrack.fullDate {
+        foundTrack = track
+        print(track)
+      }
+    }
+    return foundTrack
+  }
+  
+  // MARK: - Sort tracks
+  
   func getFutureTracks(_ tracks: [RaceTrackModel]) -> [RaceTrackModel] {
     let date = Date()
     var arrayFutureTracks:[RaceTrackModel] = []
@@ -85,19 +109,6 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     }
     return arrayFutureTracks
   }
-  
-  func getNextTrack(tracks: [RaceTrackModel]) -> RaceTrackModel? {
-    var foundTrack: RaceTrackModel? = tracks.first
-    guard let unwrappedFoundTrack = foundTrack else { return nil }
-    for track in tracks {
-      if track.fullDate > unwrappedFoundTrack.fullDate {
-        foundTrack = track
-      }
-    }
-    return foundTrack
-  }
-  
-  // MARK: - Sort tracks
   
   func getPastTracks(_ tracks: [RaceTrackModel]) -> [RaceTrackModel] {
     let date = Date()
