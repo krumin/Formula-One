@@ -25,12 +25,12 @@ class DetailTrackViewController: UIViewController, UITableViewDelegate, UITableV
   
   var results = [RaceResultsModel]() {
     didSet {
-      print("test. results did set: \(results)")
+      print("results did set: \(results)")
     }
   }
   var qualifying = [QualifyingResultsModel]() {
     didSet {
-      print("test. results did set: \(qualifying)")
+      print("qualifying did set: \(qualifying)")
     }
   }
   

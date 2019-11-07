@@ -21,6 +21,8 @@ class ConstructorTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    tableView.tableFooterView = UIView(frame: .zero)
+    
     RequestManager.shared.loadRequestConstructor(success: { [weak self] constructors in
       guard let self = self else { return }
       self.standings = constructors

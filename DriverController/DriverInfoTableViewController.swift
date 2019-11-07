@@ -91,6 +91,7 @@ extension DriverInfoTableViewController {
     }
   }
   
+  // Method ShowSafari
   func showSafari(with standing:DriverStandings) {
     let constructorsUrl = standing.driver
     guard let url = URL(string: constructorsUrl.url) else { return }

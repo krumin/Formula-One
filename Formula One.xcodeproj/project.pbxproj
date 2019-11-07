@@ -41,6 +41,9 @@
 		22DEBFB6233B90F000E5C643 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DEBFB5233B90F000E5C643 /* Country.swift */; };
 		22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2B23387D7D00F2AABD /* DriverStandings.swift */; };
 		22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */; };
+		22FB0F44237493760023E2AD /* NewsLinksUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB0F43237493760023E2AD /* NewsLinksUITableViewController.swift */; };
+		22FB0F4823749A9A0023E2AD /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB0F4723749A9A0023E2AD /* Links.swift */; };
+		22FB0F4A23749ED90023E2AD /* NewsLinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB0F4923749ED90023E2AD /* NewsLinksTableViewCell.swift */; };
 		22FDF6BF236A260F00602553 /* RequestManager+RaceTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FDF6BE236A260F00602553 /* RequestManager+RaceTrack.swift */; };
 		6627D4DC0025C5305AEEB137 /* Pods_Formula_One.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +85,9 @@
 		22DEBFB5233B90F000E5C643 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		22F73F2B23387D7D00F2AABD /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
 		22F73F2D2338866400F2AABD /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
+		22FB0F43237493760023E2AD /* NewsLinksUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLinksUITableViewController.swift; sourceTree = "<group>"; };
+		22FB0F4723749A9A0023E2AD /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		22FB0F4923749ED90023E2AD /* NewsLinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLinksTableViewCell.swift; sourceTree = "<group>"; };
 		22FDF6BE236A260F00602553 /* RequestManager+RaceTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestManager+RaceTrack.swift"; sourceTree = "<group>"; };
 		3D4A4AF7D637D4AD687F2384 /* Pods-Formula One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula One.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formula One/Pods-Formula One.release.xcconfig"; sourceTree = "<group>"; };
 		40B9C6F96827FA5E91789044 /* Pods_Formula_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formula_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +114,7 @@
 				22DF0564236DAE5400646DC3 /* Driver */,
 				22DF0562236DAE1300646DC3 /* Constructor */,
 				22DF0561236DADD500646DC3 /* RequestManager */,
+				22FB0F4D2374B8F20023E2AD /* News */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 				22DF055F236DAD5E00646DC3 /* RaceViewCell */,
 				22381131236777460004CF12 /* DriverViewCell */,
 				22381132236777A00004CF12 /* ConstructorViewCell */,
+				22FB0F4B2374B8540023E2AD /* WebNewsCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		221989472337FBE200EAFDD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				22FB0F4C2374B8B10023E2AD /* WebNewsController */,
 				22DF055B236DAC2A00646DC3 /* RaceController */,
 				22DF055A236DABEC00646DC3 /* DriverController */,
 				22DF055E236DACC900646DC3 /* ConstructorController */,
@@ -263,6 +272,30 @@
 				22CFCF95234E767900CC4844 /* Circuit.swift */,
 			);
 			path = Race;
+			sourceTree = "<group>";
+		};
+		22FB0F4B2374B8540023E2AD /* WebNewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				22FB0F4923749ED90023E2AD /* NewsLinksTableViewCell.swift */,
+			);
+			path = WebNewsCell;
+			sourceTree = "<group>";
+		};
+		22FB0F4C2374B8B10023E2AD /* WebNewsController */ = {
+			isa = PBXGroup;
+			children = (
+				22FB0F43237493760023E2AD /* NewsLinksUITableViewController.swift */,
+			);
+			path = WebNewsController;
+			sourceTree = "<group>";
+		};
+		22FB0F4D2374B8F20023E2AD /* News */ = {
+			isa = PBXGroup;
+			children = (
+				22FB0F4723749A9A0023E2AD /* Links.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		6409B02DFE53000D689DC573 /* Frameworks */ = {
@@ -410,6 +443,7 @@
 			files = (
 				22D57DC3234CE28300567D13 /* ConstructorStandings.swift in Sources */,
 				22D5FADD236B35F000BFAFE1 /* RaceBeginningTableViewCell.swift in Sources */,
+				22FB0F44237493760023E2AD /* NewsLinksUITableViewController.swift in Sources */,
 				229D2055233531CE005DBA8C /* AppDelegate.swift in Sources */,
 				22F73F2E2338866400F2AABD /* DriverTableViewCell.swift in Sources */,
 				223E4B09235E3CED0007AC47 /* Car.swift in Sources */,
@@ -434,7 +468,9 @@
 				22F73F2C23387D7D00F2AABD /* DriverStandings.swift in Sources */,
 				2298299A2357971300A2DCD3 /* DriverInfoTableViewCell.swift in Sources */,
 				22B140C1235F9E5A00B9AE4F /* MapViewController.swift in Sources */,
+				22FB0F4A23749ED90023E2AD /* NewsLinksTableViewCell.swift in Sources */,
 				22D5FADB236B357200BFAFE1 /* RaceEndedTableViewCell.swift in Sources */,
+				22FB0F4823749A9A0023E2AD /* Links.swift in Sources */,
 				22A2FB482338E1D100132741 /* DriverModel.swift in Sources */,
 				22DEBFB6233B90F000E5C643 /* Country.swift in Sources */,
 				221D56B22356F24C00E0ADB8 /* DriverManager.swift in Sources */,

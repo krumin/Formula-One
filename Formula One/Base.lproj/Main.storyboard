@@ -325,7 +325,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSC-uF-fK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446" y="500"/>
+            <point key="canvasLocation" x="-143" y="500"/>
         </scene>
         <!--Detail Track View Controller-->
         <scene sceneID="8BF-ap-9W6">
@@ -656,7 +656,79 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnZ-ak-sU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-455" y="500"/>
+            <point key="canvasLocation" x="-865" y="500"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="FzH-3t-ogr">
+            <objects>
+                <tableViewController id="puz-gS-HyO" customClass="NewsLinksUITableViewController" customModule="Formula_One" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kFP-EY-ffm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webNews" id="tXo-mC-P4Q">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" id="bvR-lf-Cmb" customClass="NewsLinksTableViewCell" customModule="Formula_One" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="343" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bvR-lf-Cmb" id="QaB-zh-4Nr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WebNewsName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-E3-dYm">
+                                            <rect key="frame" x="16" y="7" width="172" height="28"/>
+                                            <fontDescription key="fontDescription" name="Verdana-Italic" family="Verdana" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="O1E-HX-mJf">
+                                            <rect key="frame" x="329" y="7" width="30" height="30"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cKt-E3-dYm" firstAttribute="leading" secondItem="QaB-zh-4Nr" secondAttribute="leading" constant="16" id="AEo-cn-tDX"/>
+                                        <constraint firstAttribute="trailing" secondItem="O1E-HX-mJf" secondAttribute="trailing" constant="16" id="H1Y-y7-NfX"/>
+                                        <constraint firstAttribute="bottom" secondItem="O1E-HX-mJf" secondAttribute="bottom" constant="6.5" id="Jdd-Si-sIQ"/>
+                                        <constraint firstItem="cKt-E3-dYm" firstAttribute="top" secondItem="QaB-zh-4Nr" secondAttribute="top" constant="7" id="a09-3U-mQb"/>
+                                        <constraint firstItem="O1E-HX-mJf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cKt-E3-dYm" secondAttribute="trailing" id="bwL-0C-hTA"/>
+                                        <constraint firstAttribute="bottom" secondItem="cKt-E3-dYm" secondAttribute="bottom" constant="8.5" id="pcG-C4-XEA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="webNameTextLabel" destination="cKt-E3-dYm" id="RhE-Xq-Sjt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="puz-gS-HyO" id="qet-nj-vnU"/>
+                            <outlet property="delegate" destination="puz-gS-HyO" id="ljl-Tk-A0b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News" id="bSe-hB-A5a"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPc-yF-LvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="499.70014992503752"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="0u5-ah-9xR">
+            <objects>
+                <navigationController id="oYH-OA-xgc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="news" id="Tgm-Uq-MVP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2It-XX-X9a">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="puz-gS-HyO" kind="relationship" relationship="rootViewController" id="lzr-J1-uuq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSi-hF-hMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="500"/>
         </scene>
         <!--Drivers-->
         <scene sceneID="VAa-y2-yBe">
@@ -978,6 +1050,7 @@
                         <segue destination="efG-wd-Ep0" kind="relationship" relationship="viewControllers" id="YvF-IM-gbF"/>
                         <segue destination="c1e-hz-dL3" kind="relationship" relationship="viewControllers" id="hzp-W4-381"/>
                         <segue destination="wDd-WZ-CWe" kind="relationship" relationship="viewControllers" id="7fw-GZ-c79"/>
+                        <segue destination="oYH-OA-xgc" kind="relationship" relationship="viewControllers" id="Ocy-2T-qPi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJK-L3-phC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1010,7 +1083,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-xo-kM9">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="359.5"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-Kd-UQb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="arrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-Kd-UQb">
                                                     <rect key="frame" x="315" y="324" width="30" height="30"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="DriverName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-Sz-gjl">
@@ -1167,7 +1240,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow" width="30" height="30"/>
+        <image name="arrowDown" width="30" height="30"/>
+        <image name="arrowRight" width="30" height="30"/>
         <image name="constructors" width="25" height="25"/>
         <image name="drivers" width="25" height="25"/>
         <image name="gradient" width="600" height="800"/>
@@ -1265,8 +1339,10 @@ AAAAAAAAAAAAAAAAE+Y
 </mutableData>
         </image>
         <image name="map" width="24" height="24"/>
+        <image name="news" width="25" height="25"/>
         <image name="race" width="640" height="670"/>
         <image name="raceInfo" width="25" height="25"/>
         <image name="raceTrack" width="25" height="25"/>
+        <image name="webNews" width="644" height="403"/>
     </resources>
 </document>

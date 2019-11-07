@@ -21,6 +21,15 @@ class DriverTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    loadData()
+  }
+}
+
+// MARK: - Load data
+  
+extension DriverTableViewController {
+  
+  func loadData() {
     RequestManager.shared.loadRequestDriver(success: { [weak self] drivers in
       guard let self = self else { return }
       self.standings = drivers

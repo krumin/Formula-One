@@ -32,7 +32,7 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   var nextRace: RaceTrackModel?
   
   // Future tracks
-  var raceBeginning = [RaceTrackModel]() {
+  private var raceBeginning = [RaceTrackModel]() {
     didSet {
       DispatchQueue.main.async {
         self.tableView.reloadData()
@@ -41,7 +41,7 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
   }
 
   // Past tracks
-  var raceEnded = [RaceTrackModel]() {
+  private var raceEnded = [RaceTrackModel]() {
     didSet {
       DispatchQueue.main.async {
         self.tableView.reloadData()
@@ -53,6 +53,7 @@ class RaceInfoViewController: UIViewController, UITableViewDelegate, UITableView
     super.viewDidLoad()
     
     loadData()
+    tableView.tableFooterView = UIView(frame: .zero)
   }
 
   // Need stop timer when controller will deinit
@@ -104,8 +105,10 @@ extension RaceInfoViewController {
   func parseTracks(_ tracks: [RaceTrackModel]) {
     // Get future tracks
     self.raceBeginning = self.getFutureTracks(tracks)
+    print("success: FutureTracks count \(self.raceBeginning.count)")
     // Get past tracks
     self.raceEnded = self.getPastTracks(tracks)
+    print("success: PastTracks count \(self.raceEnded.count)")
     // Get next race
     self.nextRace = self.getNextTrack(tracks: self.raceBeginning)
   }
@@ -211,6 +214,7 @@ extension RaceInfoViewController {
     }
   }
   
+  // Method ShowSafari
   func showSafari(with race:RaceTrackModel) {
     let tracksUrl = race.url
     guard let url = URL(string: tracksUrl) else { return }

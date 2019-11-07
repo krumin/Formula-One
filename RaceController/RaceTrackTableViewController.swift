@@ -23,8 +23,18 @@ class RaceTrackTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    loadData()
     
+    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+  
+  }
+}
+
+// MARK: - Load data
+
+extension RaceTrackTableViewController {
+  
+  func loadData() {
     RequestManager.shared.loadRequestTrack(success: { [weak self] tracks in
       guard let self = self else { return }
       self.track = tracks

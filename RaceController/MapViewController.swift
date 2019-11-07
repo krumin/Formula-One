@@ -21,7 +21,6 @@ class MapViewController: UIViewController {
     
     if let race = race {
       let location = CLLocationCoordinate2DMake(race.lat, race.long)
-      
       let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
       let region = MKCoordinateRegion(center: location, span: span)
       
