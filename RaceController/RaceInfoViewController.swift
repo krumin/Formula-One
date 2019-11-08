@@ -270,8 +270,8 @@ extension RaceInfoViewController {
   func timeString(interval: TimeInterval) -> String {
     let interval = Int(interval)
     let days = (interval / 86400)
-    let hours = (interval / 86400) / 3600
-    let minutes = (interval / 3600) % 60
+    let hours = (interval / 86400) % 24
+    let minutes = (interval / 60) % 60
     let seconds = interval % 60
     return String(format: "%02i : %02i : %02i : %02i", days, hours, minutes, seconds)
   }

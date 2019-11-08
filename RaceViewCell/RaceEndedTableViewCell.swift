@@ -15,7 +15,7 @@ class RaceEndedTableViewCell: UITableViewCell {
   
   func loadData(with tracks:RaceTrackModel) {
     let flag = tracks.country.flag
-    raceName.text = tracks.raceName
+    raceName.text = tracks.raceName + " (\(tracks.date))"
     flagImageView.image = flag
   }
 }

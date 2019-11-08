@@ -133,10 +133,10 @@
 		221989472337FBE200EAFDD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				22FB0F4C2374B8B10023E2AD /* WebNewsController */,
 				22DF055B236DAC2A00646DC3 /* RaceController */,
 				22DF055A236DABEC00646DC3 /* DriverController */,
 				22DF055E236DACC900646DC3 /* ConstructorController */,
+				22FB0F4C2374B8B10023E2AD /* WebNewsController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
